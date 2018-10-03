@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import './<%= name %>.css'
 
 class <%= name %> extends Component {
   state = {}
