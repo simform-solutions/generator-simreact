@@ -15,6 +15,15 @@ module.exports = class extends Generator {
         name: componentName
       }
     )
+
+    this.fs.copyTpl(
+      this.templatePath('component.stories.js'),
+      this.destinationPath(`${path}/${componentName}.stories.js`),
+      {
+        name: componentName
+      }
+    )
+
     this.fs.copy(
       this.templatePath('component.css'),
       this.destinationPath(`${path}/${componentName}.css`)
