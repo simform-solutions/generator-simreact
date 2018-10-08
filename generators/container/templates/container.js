@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import './<%= name %>.css'
+import './<%= name %>.scss'
 
 class <%= name %> extends Component {
   state = {}

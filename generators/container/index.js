@@ -16,8 +16,8 @@ module.exports = class extends Generator {
     )
 
     this.fs.copy(
-      this.templatePath('container.css'),
-      this.destinationPath(`${path}/${containerName}.css`)
+      this.templatePath('container.scss'),
+      this.destinationPath(`${path}/${containerName}.scss`)
     )
   }
 }
