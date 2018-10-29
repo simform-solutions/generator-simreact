@@ -7,7 +7,7 @@ module.exports = class extends Generator {
     let isSagaIncluded = _.get(this.args, '[1]', null)
     reducerName = _.camelCase(reducerName)
     const path = `${this.destinationPath()}/src`
-    if (isSagaIncluded) {
+    if (isSagaIncluded === 'saga') {
       this.fs.copyTpl(
         this.templatePath('saga.js'),
         this.destinationPath(`${path}/sagas/${reducerName}.js`),

@@ -6,7 +6,7 @@ import { connectRouter, routerMiddleware } from 'connected-react-router'
 import rootReducer from './reducers'
 
 const sagaMiddleware = createSageMiddleware()
-const middleware = [routerMiddleware, sagaMiddleware]
+const middleware = [routerMiddleware(history), sagaMiddleware]
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 

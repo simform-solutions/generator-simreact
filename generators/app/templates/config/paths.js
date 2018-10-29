@@ -44,7 +44,10 @@ module.exports = {
     components: path.resolve(__dirname, '..', 'src', 'components'),
     containers: path.resolve(__dirname, '..', 'src', 'containers'),
     store: path.resolve(__dirname, '..', 'src', 'store'),
-    sagas: path.resolve(__dirname, '..', 'src', 'sagas')
+    sagas: path.resolve(__dirname, '..', 'src', 'sagas'),
+    config: path.resolve(__dirname, '..', 'src', 'config'),
+    assets: path.resolve(__dirname, '..', 'src', 'assets'),
+    services: path.resolve(__dirname, '..', 'src', 'services')
   },
   dotenv: resolveApp('.env'),
   appPath: resolveApp('.'),

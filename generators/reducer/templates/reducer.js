@@ -7,12 +7,14 @@ const <%= name %>Request = () => ({
 
 const <%= name %>Success = (state, data) => ({
   ...state,
+  loading: false,
   data
 })
 
 const <%= name %>Failure = (state, error) => ({
   ...state,
-  data
+  loading:false,
+  error
 })
 
 export const { Types: <%= typename %>, Creators } = createActions({
@@ -28,7 +30,7 @@ const initialState = {
 }
 
 export default createReducer(initialState, {
-  [Types.<%= constName %>_REQUEST]: <%= name %>Request,
-  [Types.<%= constName %>_SUCCESS]: <%= name %>Success,
-  [Types.<%= constName %>_FAILURE]: <%= name %>Failure
+  [<%= typename %>.<%= constName %>_REQUEST]: <%= name %>Request,
+  [<%= typename %>.<%= constName %>_SUCCESS]: <%= name %>Success,
+  [<%= typename %>.<%= constName %>_FAILURE]: <%= name %>Failure
 })

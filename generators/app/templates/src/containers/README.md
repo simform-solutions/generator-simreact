@@ -1,3 +1,3 @@
 ### Generate a container
 
-- To generate a container run the commmand from your project root `yo rb:container <ContainerName>`
+- To generate a container run the commmand from your project root `yo simreact:container <ContainerName>`
