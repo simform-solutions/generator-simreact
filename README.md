@@ -12,7 +12,7 @@
 npm install -g yo
 # from root directory
 npm install
-npm run link
+npm link
 ```
 
 Then generate your new project:
