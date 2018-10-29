@@ -128,11 +128,6 @@ module.exports = class extends Generator {
     )
 
     this.fs.copy(
-      this.templatePath('stories/'),
-      this.destinationPath('stories/')
-    )
-
-    this.fs.copy(
       this.templatePath('.storybook/'),
       this.destinationPath('.storybook/')
     )
